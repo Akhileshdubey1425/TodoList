@@ -1,0 +1,159 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Titillium Web", sans-serif;
+   background-color: rgba(170, 165, 165, 0.1);
+   background: rgb(118, 128, 138);
+   background: radial-gradient(
+      circle,
+      rgb(132, 144, 155) 40%,
+      rgb(97, 121, 105) 100%
+   );
+
+}
+.container {
+   margin: 0 auto;
+   margin-top: 20px;
+   width: 600px;
+   border: 1.5px solid rgb(41, 40, 40);
+}
+
+.input {
+   position: relative;
+   height: 45px;
+   padding: 10px;
+   width: auto;
+   background-color: rgb(211, 204, 197);
+   
+}
+
+.input input {
+   position: absolute;
+   font-size: 20px;
+   padding-left: 10px;
+   height: 45px;
+   width: 480px;
+   left: 70px;
+   background-color: transparent;
+   border: none;
+   border: 2px solid rgb(136, 128, 128);
+   border-radius: 10px;
+}
+
+.input input:focus {
+   outline: none;
+}
+
+.content {
+   width: 600px;
+   height: 350px;
+   max-height: 350px;
+   background-color: #fff;
+   overflow: auto;
+}
+.content ul {
+   margin: 0;
+   padding: 0;
+   
+}
+.item {
+   list-style: none;
+   width: 600px;
+   height: 45px;
+   min-height: 45px;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   border-bottom: 1px solid rgba(190, 188, 188, 0.1);
+   
+}
+
+.item img {
+   margin: 7px auto;
+   margin-left: 20px;
+   height: 30px;
+   cursor: pointer;
+   
+}
+
+.item p {
+   padding: 0;
+   margin: 0;
+   font-size: 20px;
+   margin-left: 90px;
+   margin-right: 90px;
+   margin-top: 7px;
+   background-color: #fff;
+   max-width: 285px;
+}
+
+.details-top {
+   width: 600px;
+   height: 65px;
+   min-height: 45px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   background-color: rgba(217, 248, 78, 0.863);
+   border-bottom: 1px solid black;
+}
+.details-top img {
+   margin-top: 15px;
+   margin-left: 4px;
+   height: 30px;
+}
+
+.details-top p {
+   cursor: pointer;
+   font-size: 20px;
+   margin-top: 15px;
+}
+
+.details-bottom {
+   width: 600px;
+   height: 45px;
+   display: flex;
+   flex-direction: row;
+   color: black;
+   min-height: 45px;
+   justify-content: space-around;
+   background-color: rgb(235, 90, 90);
+   border-bottom: 1px solid black;
+}
+
+.details-bottom p {
+   font-size: 15px;
+   margin-bottom: 20px;
+   font-weight: bold;
+   cursor: pointer;
+}
+.lineThrough {
+   text-decoration: line-through;
+   color: #ccc;
+}
+
+.tick {
+   width: 30px;
+   max-width: 10%;
+   background-image: url("../assets/tick.svg");
+   border-radius: 50%;
+}
+
+.unTick {
+   width: 30px;
+   max-width: 10%;
+   border-radius: 50%;
+   background-image: url("../assets/untick.svg");
+   
+}
+.text {
+   overflow: scroll;
+   width: 80%;
+  
+}
+
+
+.text::-webkit-scrollbar {
+   display: none;
+}
